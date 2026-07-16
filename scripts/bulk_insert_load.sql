@@ -1,10 +1,10 @@
 -- =================================================================================
--- Script Name: load_bronze_layer.sql
+-- Script Name: bulk_insert_load.sql
 -- Purpose:     Creates or updates a stored procedure that orchestrates the entire
 --              data pipeline ingestion for the DataWarehouse 'bronze' schema.
 --              It completely refreshes and bulk inserts all CRM and ERP source CSV files.
 --              Additionally, a TRY...CATCH block is implemented to gracefully handle 
---              runtime errors, and time tracking tracking metrics are utilized to 
+--              runtime errors, and time tracking metrics are utilized to 
 --              calculate and capture the precise execution duration of each table load.
 --
 -- WARNING:     RUNNING THIS STORED PROCEDURE WILL TRUNCATE (DELETE ALL RECORDS FROM)
