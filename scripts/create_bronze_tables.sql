@@ -10,7 +10,7 @@
 --              'bronze' schema for the specified objects. 
 --              PLEASE BACK UP YOUR DATA BEFORE EXECUTING THIS SCRIPT.
 --
--- Author:      [Your Name / GitHub Username]
+-- Author:      koulagi
 -- Date:        2026-07-16
 =================================================================================
 */
