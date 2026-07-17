@@ -1,18 +1,17 @@
 /*
 ===============================================================================
-DDL Script: Silver Layer Table Creation
-===============================================================================
-Description:
-    This script initializes the Silver Layer tables for both CRM and ERP 
-    source systems within the Data Warehouse. 
-    
-    The Silver Layer acts as the cleansed, standardized, and conformed 
-    reconciliation area before data is modeled into the Gold Layer.
+Script Name:    create_silver_tables.sql
+Purpose:        Initializes the 'silver' schema tables within the DataWarehouse.
+                This script is responsible for setting up the cleansed, 
+                standardized, and conformed layer for CRM and ERP source data.
 
-Execution Pattern:
-    - Master Deployment Wrappers (Conditional Drop & Recreate)
-    - Consolidated Error/Status Logging (PRINT Statements)
-    - Normalized Column Alignment & Standardized Datatypes
+WARNING:        THIS SCRIPT CONTAINS 'DROP TABLE' STATEMENTS. Running this will 
+                PERMANENTLY DELETE any existing tables and data within the 
+                'silver' schema for the specified objects. 
+                PLEASE BACK UP YOUR DATA BEFORE EXECUTING THIS SCRIPT.
+
+Author:         koulagi
+Date:           2026-07-17
 ===============================================================================
 */
 
